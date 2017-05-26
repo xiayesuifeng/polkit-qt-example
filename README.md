@@ -1,6 +1,8 @@
 # polkit-qt-example
 实现利用polkit+dbus进行root操作实例
 
+源码分析：http://morfans.cn/archives/2456
+
 # 依赖
 Qt5
 
