@@ -1,0 +1,12 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="com.polkit.qt.example.dbus">
+    <method name="echo">
+      <arg type="s" direction="out"/>
+    </method>
+    <method name="writeEtc">
+      <arg type="b" direction="out"/>
+      <arg name="text" type="s" direction="in"/>
+    </method>
+  </interface>
+</node>
