@@ -16,12 +16,13 @@ int main(int argc, char **argv)
 
 //    注册服务名
     QDBusConnection connection = QDBusConnection::systemBus();
-    if(!connection.registerService("com.polkit.qt.example.dbus")){
+    qDebug() << connection.isConnected();
+    if(!connection.registerService("com.polkit.qt.example.dbus") || !connection.registerObject("/", dbus1)){
         qDebug() << connection.lastError();
         app.exit(1);
         return 1;
     }
 
-    connection.registerObject("/", dbus1);
+
     return app.exec();
 }

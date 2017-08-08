@@ -1,0 +1,6 @@
+[Unit]
+Description=polkit-qt-example-daemon
+
+[Service]
+Type=dbus
+BusName=com.polkit.qt.example.dbus

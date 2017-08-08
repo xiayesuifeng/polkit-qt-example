@@ -16,6 +16,7 @@ mainwindow::mainwindow(QWidget *parent) :
     QLabel *label = new QLabel(this);
     label->setGeometry(10, 60, 300, 20);
 
+    qDebug() << QCoreApplication::applicationPid();
     com::polkit::qt::example::dbus *dbus = new com::polkit::qt::example::dbus(
             "com.polkit.qt.example.dbus", "/", QDBusConnection::systemBus(), this);
 

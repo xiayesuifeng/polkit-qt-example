@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=com.polkit.qt.example.dbus
-Exec=/home/linux/ClionProjects/polkit-qt-example/cmake-build-debug/polkit-qt-example-daemon
-User=root

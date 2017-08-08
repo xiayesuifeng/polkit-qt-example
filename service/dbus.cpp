@@ -33,6 +33,7 @@ bool dbus::writeEtc(QString text) {
             log.open(QIODevice::WriteOnly);
             log.write(file.errorString().toLocal8Bit());
             log.close();
+            return false;
         }
 
 
